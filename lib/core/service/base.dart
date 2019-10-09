@@ -13,7 +13,10 @@ class BaseService {
   BaseService._();
   static BaseService _singleton;
 
-  Dio _dio = Dio(options);
+  Dio _dio;
 
-  get dio => _dio;
+  Dio get dio {
+    _dio ??= Dio(options);
+    return _dio;
+  }
 }
