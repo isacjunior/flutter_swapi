@@ -6,9 +6,12 @@ final BaseOptions options = BaseOptions(
 );
 
 class BaseService {
-  static final BaseService _singleton = BaseService._();
-  factory BaseService() => _singleton;
+  factory BaseService() {
+    _singleton ??= BaseService._();
+    return _singleton;
+  }
   BaseService._();
+  static BaseService _singleton;
 
   Dio _dio = Dio(options);
 
