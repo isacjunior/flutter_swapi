@@ -1,0 +1,14 @@
+linter:
+  rules:
+    - always_declare_return_types
+    - always_put_control_body_on_new_line
+    - prefer_single_quotes
+    - prefer_final_fields
+    - avoid_print
+    - avoid_empty_else
+    - avoid_relative_lib_imports
+    - avoid_types_as_parameter_names
+    - always_put_required_named_parameters_first
+    - always_require_non_null_named_parameters
+    - camel_case_types
+    - prefer_conditional_assignment

@@ -6,7 +6,7 @@ import 'base.dart';
 class PeopleService {
   PeopleService._();
 
-  static Dio _dio = BaseService().dio;
+  static final Dio _dio = BaseService().dio;
 
   static Future<People> getPeople(String id) async {
     Response response = await _dio.get('/people/$id');

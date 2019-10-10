@@ -12,7 +12,7 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   final searchController = TextEditingController();
 
-  _renderResult(PeopleProvider data) {
+  Widget _renderResult(PeopleProvider data) {
     return data?.people == null
         ? Text('Nenhum personagem encontrado ou pesquisado')
         : Container(
